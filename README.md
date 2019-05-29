@@ -21,4 +21,4 @@ AlexNet Architechture
   <img src="https://www.learnopencv.com/wp-content/uploads/2018/05/AlexNet-1.png" width="800" title="hover text">
 </p>
 
-Input image for training should be of size 224 * 224
+Input image for training should be of size 227 * 227
