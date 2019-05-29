@@ -65,21 +65,21 @@ myNet = trainNetwork(trainingImages, layers, opts);
 testImages.ReadFcn = @readFunctionTrain;
 predictedLabels = classify(myNet, testImages); 
 accuracy = mean(predictedLabels == testImages.Labels)
-mycam = webcam('Logitech');
+mycam = webcam('Logitech'); #name of your webcam as it appears.
 rpi = raspi();
 while true   
   
     picture = mycam.snapshot;              % Take a picture    
-   picture = imresize(picture,[227,227]);  % Resize the picture
+    picture = imresize(picture,[227,227]);  % Resize the picture
 
     label = classify(myNet, picture); 
         % Classify the picture
         
     image(picture);     % Show the picture
     title(char(label)); 
-    if   label == 'mango';
+    if   label == 'mango'; #Produce_1
         writeDigitalPin(rpi, 24, 0);
-    elseif label == 'orange';
+    elseif label == 'orange'; #Produce_2
         writeDigitalPin(rpi, 24, 1);   % Show the label
     end
         drawnow; 
