@@ -15,5 +15,7 @@ Arduino UNO or Raspberry pi 3 can be used.
       Next we feed training images (here we have taken mango and orange fruit) each containing around 2000 image of good and bad produce.
       We then train the model and work on improving its accuracy.
       
-     AlexNet Architechture
-     ![Image of AlexNet](https://www.learnopencv.com/wp-content/uploads/2018/05/AlexNet-1.png)
+
+<p align="center">
+  <img src="https://www.learnopencv.com/wp-content/uploads/2018/05/AlexNet-1.png" width="350" title="hover text">
+</p>
