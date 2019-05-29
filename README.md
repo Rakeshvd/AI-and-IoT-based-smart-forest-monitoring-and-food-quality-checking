@@ -14,3 +14,6 @@ Arduino UNO or Raspberry pi 3 can be used.
       We consider this a classification problem , essentially involving training the cnn(Alexnet here) to differentiate between good and         rotten/bad produce.In order to make it more effecient we use transfer learning as the Alexnet is pretrained to recognise 1000             objects.
       Next we feed training images (here we have taken mango and orange fruit) each containing around 2000 image of good and bad produce.
       We then train the model and work on improving its accuracy.
+      
+     AlexNet Architechture
+     ![Image of AlexNet](https://www.learnopencv.com/wp-content/uploads/2018/05/AlexNet-1.png)
