@@ -35,8 +35,8 @@ layers = alex.Layers
 
 %% Modify Pre-trained Network 
 % AlexNet was trained to recognize 1000 classes, we need to modify it to
-% recognize just 5 classes. 
-layers(23) = fullyConnectedLayer(3); % change this based on # of classes
+% recognize just 2 classes. 
+layers(23) = fullyConnectedLayer(2); % change this based on # of classes
 layers(25) = classificationLayer
 
 %% Perform Transfer Learning
@@ -77,9 +77,9 @@ while true
         
     image(picture);     % Show the picture
     title(char(label)); 
-    if   label == 'tomoto';
+    if   label == 'mango';
         writeDigitalPin(rpi, 24, 0);
-    elseif label == 'garlic';
+    elseif label == 'orange';
         writeDigitalPin(rpi, 24, 1);   % Show the label
     end
         drawnow; 
