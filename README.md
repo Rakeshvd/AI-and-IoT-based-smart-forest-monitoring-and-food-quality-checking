@@ -22,3 +22,10 @@ AlexNet Architechture
 </p>
 
 Input image for training should be of size 227 * 227
+
+
+Dataset:
+The dataset was created using google images.
+total images for each classes:mango(850),orange(900)
+
+accuracy(on test images): 0.896
