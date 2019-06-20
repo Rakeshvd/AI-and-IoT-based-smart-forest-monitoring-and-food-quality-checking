@@ -23,7 +23,7 @@ allImages = imageDatastore('myImages', 'IncludeSubfolders', true,...
 
 
 %% Split data into training and test sets 
-[trainingImages, testImages] = splitEachLabel(allImages, 0.5, 'randomize');
+[trainingImages, testImages] = splitEachLabel(allImages, 0.8, 'randomize');
  
 %% Load Pre-trained Network (AlexNet)
 % AlexNet is a pre-trained network trained on 1000 object categories.
