@@ -7,8 +7,9 @@ The whole project is a system for forest monitoring right from collecting essent
       This box of sensors also has a HC05 bluetooth device.We then use smartphone app that is connected to this sensor box to give input         commands.
       In this app we can visualize the real-time data via cloud(Ubidot). In order to get extra data we can just use speech-to-text feature       that extracts other essential features like age of tree(from stress sensor) etc via Firebase.
       There are 3 sensors attached to esp module:
-      * Soil moisture sensor
-      * Fire sensor
+ * Soil moisture sensor (for moister detection)
+ * Fire sensor(to detect forest fire)
+ * Vibration sensor(to detect any illegal activities)
 
 2.Deep learning for forest food quality testing.
 AlexNet 
