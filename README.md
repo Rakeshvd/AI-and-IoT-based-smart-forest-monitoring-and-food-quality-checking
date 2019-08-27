@@ -33,3 +33,16 @@ The dataset was created using google images.
 total images for each classes:mango(850),orange(900)
 
 accuracy(on test images): 0.896
+
+The process:
+When then sensors detect any signal, it is sent to cloud(Firebase) and Ubidots(for visulaization). 
+The data capture happens in real time to give sufficient reaction time.
+These sensors and be configured wrt to range accordingly.
+
+Next we need to check for food quality.
+Here we have taken only 2 food samples (mango and orange).
+The camera attached to the system will be monitoring the samples in convery belt.
+As soon as it detects a defective or rotten food it sends signal to raspberry pi (we have also tested this on arduino uno).
+Raspberry pi is connected to a motor that directs the samples to particular basket(either to basket containing good samples or rotten samples).
+
+
